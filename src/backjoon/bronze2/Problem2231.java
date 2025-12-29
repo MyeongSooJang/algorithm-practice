@@ -9,7 +9,6 @@ public class Problem2231 {
     }
 
     public static void solution(int input) {
-        List<Integer> list = new ArrayList<>();
         for (int i = 1; i <= input; i++) {
             if (sumAll(i) == input) {
                 System.out.println(i);
