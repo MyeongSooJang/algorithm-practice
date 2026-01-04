@@ -2,7 +2,7 @@ package backjoon.bronze1;
 
 import java.util.*;
 
-public class Bronze2775 {
+public class Problem2775 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int[][] apt = new int[15][15];
