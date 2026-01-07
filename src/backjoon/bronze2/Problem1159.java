@@ -1,9 +1,9 @@
-package backjoon.bronze1;
+package backjoon.bronze2;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem {
+public class Problem1159 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int count = sc.nextInt();
