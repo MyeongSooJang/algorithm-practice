@@ -34,21 +34,8 @@ public class Problem7568 {
             loses[i] = lose;
             lose = 0;
         }
-        int rank = 1;
-        int count = 0;
-        int ranks[] = new int[loses.length];
-        for (int i = 0 ; i < loses.length; i++) {
-            for (int j = 0; j < loses.length; j++) {
-                if (loses[j] == i) {
-                    ranks[j] = rank;
-                    count++;
-                }
-            }
-            rank +=count;
-            count = 0;
-        }
-        System.out.println(Arrays.stream(ranks)
-                .mapToObj(String::valueOf)
+        System.out.println(Arrays.stream(loses)
+                .mapToObj(i -> String.valueOf(i + 1))
                 .collect(Collectors.joining(" ")));
     }
 }
