@@ -1,20 +1,39 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-class Main{
-    public static void main(String[] args) throws IOException {
+class Main {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] str = br.readLine().split(" ");
-        int start = Integer.parseInt(str[0]);
-        int end = Integer.parseInt(str[1]);
-        int count = 1;
-        int[] arr = new int[2000];
-        for (int i = 1; i < 50; i++) {
-            for (int j = 1; j <= i; j++) {
-                arr[count] = i;
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int n = Integer.parseInt(br.readLine());
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
+            String str = br.readLine();
+            if (isGroupWord(str)) {
                 count++;
             }
         }
-        System.out.println(Arrays.stream(arr, start, end + 1).sum());
+
+        bw.write(String.valueOf(count));
+        bw.flush();
+        bw.close();
+    }
+
+    public static boolean isGroupWord(String str) {
+        Set<Character> saved = new HashSet<>();
+
+        for (int i = 0; i < str.length(); i++) {
+            char current = str.charAt(i);
+            if (i > 0 && current == str.charAt(i - 1)) {
+                continue;
+            }
+            if (saved.contains(current)) {
+                return false;
+            }
+            saved.add(current);
+        }
+        return true;
     }
 }
