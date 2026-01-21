@@ -8,6 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 public class Problem7785 {
@@ -17,7 +18,7 @@ public class Problem7785 {
         BufferedWriter bw =
                 new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
-        Set<String> people = new HashSet<>();
+        Set<String> people = new TreeSet<>();
         for(int i =0; i < n; i++){
             String[] strs = br.readLine().split(" ");
             if(strs[1].equals("enter")){
@@ -26,8 +27,7 @@ public class Problem7785 {
                 people.remove(strs[0]);
             }
         }
-        List<String> result = people.stream().sorted((a, b) -> b.compareTo(a)).collect(Collectors.toList());
-        bw.write(String.join("\n", result));
+        bw.write(String.join("\n", ((TreeSet<String>) people).descendingSet()));
         bw.flush();
         bw.close();
     }
