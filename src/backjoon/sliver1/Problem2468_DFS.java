@@ -7,11 +7,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
-public class Problem2468 {
+public class Problem2468_DFS {
     static int[][] field;
     static boolean[][] visited;
     static int[] dx = {0, 0, -1, 1};
@@ -41,7 +39,7 @@ public class Problem2468 {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
                     if (!visited[i][j] && field[i][j] > height) {
-                        bfs(i, j, height);
+                        dfs(i, j, height);
                         count++;
                     }
                 }
@@ -55,20 +53,14 @@ public class Problem2468 {
 
     }
 
-    public static void bfs(int i, int j, int height) {
+    public static void dfs(int i, int j, int height) {
         visited[i][j] = true;
-        Queue<int[]> queue = new LinkedList<>();
-        queue.add(new int[]{i, j});
-        while (!queue.isEmpty()) {
-            int[] current = queue.poll();
-            for (int k = 0; k < 4; k++) {
-                int X = current[0] + dx[k];
-                int Y = current[1] + dy[k];
-                if (0 <= X && X < size && 0 <= Y && Y < size
-                        && field[X][Y] > height && !visited[X][Y]) {
-                    queue.add(new int[]{X, Y});
-                    visited[X][Y] = true;
-                }
+        for (int k = 0; k < 4; k++) {
+            int X = i + dx[k];
+            int Y = j + dy[k];
+            if (0 <= X && X < size && 0 <= Y && Y < size
+                    && field[X][Y] > height && !visited[X][Y]) {
+                dfs(X, Y, height);
             }
         }
     }
