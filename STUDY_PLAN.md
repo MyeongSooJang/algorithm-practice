@@ -228,7 +228,7 @@
 ### 2단계 — 실버 2 (매개변수 탐색)
 - [x] [1654](https://www.acmicpc.net/problem/1654) 랜선 자르기 · 실버 2
 - [x] [2805](https://www.acmicpc.net/problem/2805) 나무 자르기 · 실버 2
-- [ ] [2512](https://www.acmicpc.net/problem/2512) 예산 · 실버 2
+- [x] [2512](https://www.acmicpc.net/problem/2512) 예산 · 실버 2
 - [ ] [2343](https://www.acmicpc.net/problem/2343) 기타 레슨 · 실버 2
 
 ### 3단계 — 실버 1
@@ -309,7 +309,7 @@
 ### 2단계 — 실버 1
 - [x] [2667](https://www.acmicpc.net/problem/2667) 단지번호붙이기 · 실버 1
 - [x] [2468](https://www.acmicpc.net/problem/2468) 안전 영역 (DFS) · 실버 1
-- [ ] [4963](https://www.acmicpc.net/problem/4963) 섬의 개수 · 실버 2
+- [x] [4963](https://www.acmicpc.net/problem/4963) 섬의 개수 · 실버 2
 
 ### 3단계 — 골드 5
 - [ ] [16234](https://www.acmicpc.net/problem/16234) 인구 이동 · 골드 5
