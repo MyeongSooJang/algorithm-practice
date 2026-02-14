@@ -232,7 +232,7 @@
 - [ ] [2343](https://www.acmicpc.net/problem/2343) 기타 레슨 · 실버 2
 
 ### 3단계 — 실버 1
-- [ ] [6236](https://www.acmicpc.net/problem/6236) 용돈 관리 · 실버 2
+- [x] [6236](https://www.acmicpc.net/problem/6236) 용돈 관리 · 실버 2
 
 ### 4단계 — 골드 5
 - [ ] [3079](https://www.acmicpc.net/problem/3079) 입국 심사 · 골드 5
@@ -322,7 +322,7 @@
 ### 1단계 — 실버 2 ~ 1 (기초)
 - [x] [1260](https://www.acmicpc.net/problem/1260) DFS와 BFS · 실버 2
 - [x] [2178](https://www.acmicpc.net/problem/2178) 미로 탐색 · 실버 1
-- [ ] [2644](https://www.acmicpc.net/problem/2644) 촌수계산 · 실버 2
+- [x] [2644](https://www.acmicpc.net/problem/2644) 촌수계산 · 실버 2
 
 ### 2단계 — 실버 1 (응용)
 - [x] [1697](https://www.acmicpc.net/problem/1697) 숨바꼭질 · 실버 1
