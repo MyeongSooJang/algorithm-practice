@@ -1,497 +1,336 @@
-# 자바 알고리즘 문제풀이 학습 계획표
+# 백준 알고리즘 학습 로드맵
 
-> **전체**: 104개 문제 / 22시간 27분  
-> **목표**: 하루 1-2시간씩 꾸준히 학습  
-> **기간**: 약 6-8주 완성 목표
+> **목표**: 골드 5 달성 | **현재**: 실버 1 (96문제 완료)
 
-## 📋 학습 방법
-1. ✅ 문제를 먼저 20-30분 고민해보기
-2. ✅ 막히면 문법만 검색해서 구현 시도
-3. ✅ 안 되면 강의 힌트만 보고 다시 시도
-4. ✅ 다음날 복습 필수!
+# 문제를 풀고 프로젝트 루트 (C:\Users\home\Desktop\알고리즘)에서 실행
+->   powershell -ExecutionPolicy Bypass -File update_progress.ps1
 
 ---
 
-## 📚 주차별 학습 계획
+## 📊 유형별 진행 현황
 
-### Week 1: 기초 다지기 (String, Array)
-
-#### 섹션 1. 체점사이트 연결과 강의자료 (5분)
-- [ ] 1-1. 체점사이트 소개
-- [ ] 1-2. 강의자료 다운로드
-- [ ] 1-3. 학습 환경 설정
-
-**학습 목표**: 기본 세팅 완료
-
----
-
-#### 섹션 2. String(문자열) - 12개 문제 (2시간 12분)
-- [ ] 2-1. 문자 찾기
-- [ ] 2-2. 대소문자 변환
-- [ ] 2-3. 문장 속 단어
-- [ ] 2-4. 단어 뒤집기
-- [ ] 2-5. 특정 문자 뒤집기
-- [ ] 2-6. 중복문자제거
-- [ ] 2-7. 회문 문자열
-- [ ] 2-8. 팰린드롬
-- [ ] 2-9. 숫자만 추출
-- [ ] 2-10. 가장 짧은 문자거리
-- [ ] 2-11. 문자열 압축
-- [ ] 2-12. 암호
-
-**학습 목표**: String 메서드 완벽 숙지 (charAt, substring, indexOf 등)
-
-**자주 쓰는 String 메서드**:
-```java
-String str = "Hello";
-str.charAt(0);           // 'H'
-str.length();            // 5
-str.toUpperCase();       // "HELLO"
-str.toLowerCase();       // "hello"
-str.substring(1, 3);     // "el"
-str.indexOf('l');        // 2
-str.replace('l', 'x');   // "Hexxo"
-str.split(" ");          // 문자열 배열
-str.toCharArray();       // char 배열
-Character.isUpperCase('A');  // true
-Character.isLowerCase('a');  // true
-```
+| 유형 | 완료 | 현재 수준 | 다음 목표 |
+|------|------|---------|---------|
+| 구현 / 완전탐색 | 15개 | 실버 5 | 실버 2 |
+| 수학 | 18개 | 실버 4 | 실버 2 |
+| 문자열 | 11개 | 실버 5 | 실버 2 |
+| 정렬 / 우선순위 큐 | 9개 | 실버 2 | 골드 5 |
+| HashMap / Set | 10개 | 실버 4 | 실버 2 |
+| 스택 | 5개 | 실버 2 | 골드 5 |
+| 큐 / 덱 | 4개 | 실버 3 | 골드 5 |
+| 그리디 | 6개 | 실버 1 | 골드 5 |
+| 이진탐색 | 1개 | 실버 2 | 골드 5 |
+| 누적합 | 1개 | 실버 3 | 실버 1 |
+| Two Pointers | 0개 | - | 골드 5 |
+| DP | 9개 | 실버 3 | 골드 5 |
+| DFS | 6개 | 실버 1 | 골드 5 |
+| BFS | 5개 | 실버 1 | 골드 5 |
 
 ---
 
-### Week 2: 배열 마스터
+## 1. 구현 / 수학 / 완전탐색
 
-#### 섹션 3. Array(1, 2차원 배열) - 12개 문제 (1시간 57분)
-- [ ] 3-1. 큰 수 출력하기
-- [ ] 3-2. 보이는 학생
-- [ ] 3-3. 가위바위보
-- [ ] 3-4. 피보나치 수열
-- [ ] 3-5. 소수(에라토스테네스 체)
-- [ ] 3-6. 뒤집은 소수
-- [ ] 3-7. 점수계산
-- [ ] 3-8. 등수구하기
-- [ ] 3-9. 격자판 최대합
-- [ ] 3-10. 봉우리
-- [ ] 3-11. 임시반장 정하기
-- [ ] 3-12. 멘토링
+### 1단계 — 브론즈 (기초)
+- [x] [2738](https://www.acmicpc.net/problem/2738) 행렬 덧셈 · 브론즈 3
+- [x] [4153](https://www.acmicpc.net/problem/4153) 직각삼각형 · 브론즈 3
+- [x] [30802](https://www.acmicpc.net/problem/30802) 주문 · 브론즈 3
+- [x] [1978](https://www.acmicpc.net/problem/1978) 소수 찾기 · 브론즈 2
+- [x] [2292](https://www.acmicpc.net/problem/2292) 벌집 · 브론즈 2
+- [x] [1297](https://www.acmicpc.net/problem/1297) 부분 직사각형 · 브론즈 2
+- [x] [2920](https://www.acmicpc.net/problem/2920) 음계 · 브론즈 2
+- [x] [2231](https://www.acmicpc.net/problem/2231) 분해합 · 브론즈 2
+- [x] [2798](https://www.acmicpc.net/problem/2798) 블랙잭 · 브론즈 2
+- [x] [2609](https://www.acmicpc.net/problem/2609) 최대공약수와 최소공배수 · 브론즈 1
+- [x] [2869](https://www.acmicpc.net/problem/2869) 달팽이는 넘어가 · 브론즈 1
+- [x] [11050](https://www.acmicpc.net/problem/11050) 이항 계수 1 · 브론즈 1
+- [x] [14626](https://www.acmicpc.net/problem/14626) ISBN · 브론즈 1
+- [x] [28702](https://www.acmicpc.net/problem/28702) FizzBuzz · 브론즈 1
+- [x] [11653](https://www.acmicpc.net/problem/11653) 소인수분해 · 브론즈 1
+- [x] [1546](https://www.acmicpc.net/problem/1546) 평균 · 브론즈 1
+- [x] [1110](https://www.acmicpc.net/problem/1110) 더하기 사이클 · 브론즈 1
+- [x] [10798](https://www.acmicpc.net/problem/10798) 세로읽기 · 브론즈 1
+- [x] [2309](https://www.acmicpc.net/problem/2309) 일곱 난쟁이 · 브론즈 1
+- [x] [4344](https://www.acmicpc.net/problem/4344) 평균은 넘겠지 · 브론즈 1
+- [x] [1236](https://www.acmicpc.net/problem/1236) 성 지키기 · 브론즈 1
+- [x] [1292](https://www.acmicpc.net/problem/1292) 쉽게 푸는 문제 · 브론즈 1
 
-**학습 목표**: 1차원/2차원 배열 순회 패턴 익히기
+### 2단계 — 실버 5 ~ 4
+- [x] [1436](https://www.acmicpc.net/problem/1436) 영화감독 숌 · 실버 5
+- [x] [7568](https://www.acmicpc.net/problem/7568) 덩치 · 실버 5
+- [x] [4673](https://www.acmicpc.net/problem/4673) 셀프 넘버 · 실버 5
+- [x] [2563](https://www.acmicpc.net/problem/2563) 색종이 · 실버 5
+- [x] [1676](https://www.acmicpc.net/problem/1676) 팩토리얼 0의 개수 · 실버 5
+- [x] [1193](https://www.acmicpc.net/problem/1193) 분수찾기 · 실버 5
+- [x] [1010](https://www.acmicpc.net/problem/1010) 다리 놓기 · 실버 5
+- [x] [25206](https://www.acmicpc.net/problem/25206) 성적 구하기 · 실버 5
+- [x] [1929](https://www.acmicpc.net/problem/1929) 소수 구하기 (에라토스테네스) · 실버 4
+- [x] [1018](https://www.acmicpc.net/problem/1018) 체스판 다시 칠하기 · 실버 5
+- [ ] [1712](https://www.acmicpc.net/problem/1712) 손익분기점 · 실버 4
 
-**자주 쓰는 배열 패턴**:
-```java
-// 1차원 배열
-int[] arr = new int[5];
-for (int i = 0; i < arr.length; i++) { }
+### 3단계 — 실버 3 ~ 2
+- [ ] [2503](https://www.acmicpc.net/problem/2503) 숫자 야구 · 실버 3
+- [ ] [15649](https://www.acmicpc.net/problem/15649) N과 M (1) · 실버 3
+- [ ] [15650](https://www.acmicpc.net/problem/15650) N과 M (2) · 실버 3
+- [ ] [15651](https://www.acmicpc.net/problem/15651) N과 M (3) · 실버 3
+- [ ] [6064](https://www.acmicpc.net/problem/6064) 카잉 달력 · 실버 1
 
-// 2차원 배열
-int[][] grid = new int[3][3];
-for (int i = 0; i < grid.length; i++) {
-    for (int j = 0; j < grid[i].length; j++) { }
-}
-
-// 상하좌우 탐색 (dx, dy)
-int[] dx = {-1, 0, 1, 0};
-int[] dy = {0, 1, 0, -1};
-```
-
----
-
-### Week 3: 효율성 알고리즘
-
-#### 섹션 4. Two pointers, Sliding window - 7개 문제 (1시간 27분)
-- [ ] 4-1. 두 배열 합치기
-- [ ] 4-2. 공통원소구하기
-- [ ] 4-3. 최대 매출
-- [ ] 4-4. 연속부분수열
-- [ ] 4-5. 연속된 자연수의 합
-- [ ] 4-6. 최대 길이 연속부분수열
-- [ ] 4-7. 학급 회장
-
-**학습 목표**: O(n²) → O(n) 효율성 개선 이해하기
-
-**Two Pointers 기본 패턴**:
-```java
-int left = 0, right = 0;
-while (right < n) {
-    // 윈도우 확장
-    sum += arr[right];
-    
-    // 조건 만족할 때까지 축소
-    while (sum > target) {
-        sum -= arr[left];
-        left++;
-    }
-    right++;
-}
-```
+### 4단계 — 실버 1 ~ 골드 5
+- [ ] [14888](https://www.acmicpc.net/problem/14888) 연산자 끼워넣기 · 실버 1
+- [ ] [1987](https://www.acmicpc.net/problem/1987) 알파벳 · 골드 4
 
 ---
 
-### Week 4: 자료구조 기초
+## 2. 문자열 (String)
 
-#### 섹션 5. HashMap, TreeSet - 5개 문제 (1시간 25분)
-- [ ] 5-1. 학급 회장 (HashMap)
-- [ ] 5-2. 아나그램
-- [ ] 5-3. 매출액의 종류
-- [ ] 5-4. 모든 아나그램 찾기
-- [ ] 5-5. K번째 큰 수
+### 1단계 — 브론즈
+- [x] [2675](https://www.acmicpc.net/problem/2675) 문자열 반복 · 브론즈 2
+- [x] [2908](https://www.acmicpc.net/problem/2908) 상수 · 브론즈 2
+- [x] [8958](https://www.acmicpc.net/problem/8958) OX퀴즈 · 브론즈 2
+- [x] [10809](https://www.acmicpc.net/problem/10809) 알파벳 찾기 · 브론즈 2
+- [x] [1159](https://www.acmicpc.net/problem/1159) 농구 경기 · 브론즈 2
+- [x] [1259](https://www.acmicpc.net/problem/1259) 팰린드롬수 · 브론즈 1
+- [x] [1157](https://www.acmicpc.net/problem/1157) 단어 공부 · 브론즈 1
+- [x] [1032](https://www.acmicpc.net/problem/1032) 명령 프롬프트 · 브론즈 1
+- [x] [9933](https://www.acmicpc.net/problem/9933) 민균이의 비밀번호 · 브론즈 1
 
-**학습 목표**: HashMap, TreeSet 활용법 익히기
+### 2단계 — 실버 5 ~ 4
+- [x] [2941](https://www.acmicpc.net/problem/2941) 크로아티아 알파벳 · 실버 5
+- [x] [1316](https://www.acmicpc.net/problem/1316) 그룹 단어 체커 · 실버 5
+- [ ] [1543](https://www.acmicpc.net/problem/1543) 문서 검색 · 실버 5
+- [ ] [2607](https://www.acmicpc.net/problem/2607) 비슷한 단어 · 실버 3
 
-**자주 쓰는 컬렉션**:
-```java
-// HashMap - 빈도수, 개수 세기
-HashMap<Character, Integer> map = new HashMap<>();
-map.put('A', 1);
-map.get('A');  // 1
-map.getOrDefault('B', 0);  // 0
-map.containsKey('A');  // true
-map.remove('A');
-
-// TreeSet - 자동 정렬
-TreeSet<Integer> set = new TreeSet<>();
-set.add(5);
-set.first();  // 최솟값
-set.last();   // 최댓값
-```
+### 3단계 — 실버 3 ~ 1
+- [ ] [2002](https://www.acmicpc.net/problem/2002) 추월 · 실버 3
+- [ ] [5525](https://www.acmicpc.net/problem/5525) IOIOI · 실버 1
 
 ---
 
-#### 섹션 6. Stack, Queue - 8개 문제 (1시간 45분)
-- [ ] 6-1. 올바른 괄호
-- [ ] 6-2. 괄호문자제거
-- [ ] 6-3. 크레인 인형뽑기
-- [ ] 6-4. 후위식 연산
-- [ ] 6-5. 쇠막대기
-- [ ] 6-6. 공주 구하기
-- [ ] 6-7. 교육과정 설계
-- [ ] 6-8. 응급실
+## 3. 정렬 / 우선순위 큐
 
-**학습 목표**: Stack/Queue 사용 시나리오 완벽 이해
+### 1단계 — 브론즈 ~ 실버 5
+- [x] [10989](https://www.acmicpc.net/problem/10989) 수 정렬하기 3 · 브론즈 1
+- [x] [1181](https://www.acmicpc.net/problem/1181) 단어 정렬 · 실버 5
+- [x] [2751](https://www.acmicpc.net/problem/2751) 수 정렬하기 2 · 실버 5
+- [x] [11650](https://www.acmicpc.net/problem/11650) 좌표 정렬하기 · 실버 5
+- [x] [11651](https://www.acmicpc.net/problem/11651) 좌표 정렬하기 2 · 실버 5
+- [x] [10814](https://www.acmicpc.net/problem/10814) 나이순 정렬 · 실버 5
+- [x] [1427](https://www.acmicpc.net/problem/1427) 소트인사이드 · 실버 5
 
-**Stack & Queue 기본**:
-```java
-// Stack
-Stack<Integer> stack = new Stack<>();
-stack.push(1);
-stack.pop();
-stack.peek();
-stack.isEmpty();
+### 2단계 — 실버 4 ~ 3
+- [x] [18110](https://www.acmicpc.net/problem/18110) solved.ac · 실버 4
+- [x] [2108](https://www.acmicpc.net/problem/2108) 통계학 · 실버 3
+- [ ] [10825](https://www.acmicpc.net/problem/10825) 국영수 · 실버 4
+- [ ] [1431](https://www.acmicpc.net/problem/1431) 시리얼 번호 · 실버 3
 
-// Queue
-Queue<Integer> queue = new LinkedList<>();
-queue.offer(1);
-queue.poll();
-queue.peek();
-queue.isEmpty();
-```
+### 3단계 — 실버 2 ~ 1 (우선순위 큐)
+- [ ] [11652](https://www.acmicpc.net/problem/11652) 카드 · 실버 2
+- [ ] [1927](https://www.acmicpc.net/problem/1927) 최소 힙 · 실버 2
+- [ ] [11286](https://www.acmicpc.net/problem/11286) 절댓값 힙 · 실버 1
+
+### 4단계 — 골드 5
+- [ ] [1715](https://www.acmicpc.net/problem/1715) 카드 정렬하기 · 골드 4
+- [ ] [11000](https://www.acmicpc.net/problem/11000) 강의실 배정 · 골드 5
 
 ---
 
-### Week 5: 정렬과 탐색
+## 4. HashMap / Set
 
-#### 섹션 7. Sorting and Searching - 10개 문제 (2시간 14분)
-- [ ] 7-1. 선택정렬
-- [ ] 7-2. 버블정렬
-- [ ] 7-3. 삽입정렬
-- [ ] 7-4. Least Recently Used
-- [ ] 7-5. 중복확인
-- [ ] 7-6. 장난꾸러기
-- [ ] 7-7. 좌표 정렬
-- [ ] 7-8. 이분검색
-- [ ] 7-9. 뮤직비디오
-- [ ] 7-10. 마굿간 정하기
+### 1단계 — 브론즈 ~ 실버 5
+- [x] [3052](https://www.acmicpc.net/problem/3052) 나머지 · 브론즈 2
+- [x] [11723](https://www.acmicpc.net/problem/11723) 집합 · 실버 5
+- [x] [1764](https://www.acmicpc.net/problem/1764) 듣보잡 · 실버 5
+- [x] [10815](https://www.acmicpc.net/problem/10815) 숫자 카드 · 실버 5
+- [x] [1475](https://www.acmicpc.net/problem/1475) 방 번호 · 실버 5
+- [x] [7785](https://www.acmicpc.net/problem/7785) 회사에 있는 사람 · 실버 5
 
-**학습 목표**: 정렬 알고리즘 원리 이해, 이분탐색 마스터
+### 2단계 — 실버 4
+- [x] [1920](https://www.acmicpc.net/problem/1920) 수 찾기 · 실버 4
+- [x] [10816](https://www.acmicpc.net/problem/10816) 숫자 카드 2 · 실버 4
+- [x] [1620](https://www.acmicpc.net/problem/1620) 나는야 포켓몬 마스터 이다솜 · 실버 4
+- [x] [17219](https://www.acmicpc.net/problem/17219) 비밀번호 찾기 · 실버 4
+- [ ] [1302](https://www.acmicpc.net/problem/1302) 베스트셀러 · 실버 4
 
-**정렬 & 이분탐색**:
-```java
-// 배열 정렬
-Arrays.sort(arr);
-
-// Comparator 정렬
-Arrays.sort(arr, (a, b) -> a - b);  // 오름차순
-Arrays.sort(arr, (a, b) -> b - a);  // 내림차순
-
-// 이분탐색 템플릿
-int left = 0, right = n - 1;
-while (left <= right) {
-    int mid = (left + right) / 2;
-    if (arr[mid] == target) return mid;
-    else if (arr[mid] < target) left = mid + 1;
-    else right = mid - 1;
-}
-```
+### 3단계 — 실버 3 ~ 2
+- [ ] [14425](https://www.acmicpc.net/problem/14425) 문자열 집합 · 실버 3
+- [ ] [1269](https://www.acmicpc.net/problem/1269) 대칭 차집합 · 실버 4
+- [x] [9375](https://www.acmicpc.net/problem/9375) 패션왕 신해빈 · 실버 3
 
 ---
 
-### Week 6-7: 그래프 탐색 (핵심!)
+## 5. 스택 (Stack)
 
-#### 섹션 8. Recursive, Tree, Graph(DFS, BFS 기초) - 14개 문제 (3시간 46분)
-- [ ] 8-1. 재귀함수
-- [ ] 8-2. 재귀함수 연습
-- [ ] 8-3. 팩토리얼
-- [ ] 8-4. 피보나치(재귀)
-- [ ] 8-5. 이진트리순회(DFS)
-- [ ] 8-6. 부분집합 구하기(DFS)
-- [ ] 8-7. 이진트리 레벨탐색(BFS)
-- [ ] 8-8. 송아지 찾기(BFS)
-- [ ] 8-9. Tree 말단노드까지의 가장 짧은 경로(DFS)
-- [ ] 8-10. Tree 말단노드까지의 가장 짧은 경로(BFS)
-- [ ] 8-11. 그래프와 인접행렬
-- [ ] 8-12. 경로탐색(DFS)
-- [ ] 8-13. 경로탐색(인접리스트)
-- [ ] 8-14. 그래프 최단거리(BFS)
+### 1단계 — 실버 4
+- [x] [10828](https://www.acmicpc.net/problem/10828) 스택 · 실버 4
+- [x] [9012](https://www.acmicpc.net/problem/9012) 괄호 · 실버 4
+- [x] [4949](https://www.acmicpc.net/problem/4949) 균형잡힌 세상 · 실버 4
+- [x] [10773](https://www.acmicpc.net/problem/10773) 제로 · 실버 4
 
-**학습 목표**: DFS/BFS 기초 개념 완벽 이해
+### 2단계 — 실버 3 ~ 2
+- [x] [1874](https://www.acmicpc.net/problem/1874) 스택 수열 · 실버 2
+- [ ] [1935](https://www.acmicpc.net/problem/1935) 후위 표기식 2 · 실버 3
+- [ ] [2504](https://www.acmicpc.net/problem/2504) 괄호의 값 · 골드 5
 
-**DFS 템플릿 (반드시 암기!)**:
-```java
-static boolean[] visited;
-
-void DFS(int v) {
-    visited[v] = true;
-    // 처리 로직
-    
-    for (int next : graph[v]) {
-        if (!visited[next]) {
-            DFS(next);
-        }
-    }
-}
-```
-
-**BFS 템플릿 (반드시 암기!)**:
-```java
-void BFS(int start) {
-    Queue<Integer> queue = new LinkedList<>();
-    boolean[] visited = new boolean[n];
-    
-    queue.offer(start);
-    visited[start] = true;
-    
-    while (!queue.isEmpty()) {
-        int v = queue.poll();
-        // 처리 로직
-        
-        for (int next : graph[v]) {
-            if (!visited[next]) {
-                queue.offer(next);
-                visited[next] = true;
-            }
-        }
-    }
-}
-```
+### 3단계 — 골드 5
+- [ ] [6198](https://www.acmicpc.net/problem/6198) 옥상 정원 꾸미기 · 골드 5
+- [ ] [2493](https://www.acmicpc.net/problem/2493) 탑 · 골드 5
+- [ ] [17298](https://www.acmicpc.net/problem/17298) 오큰수 · 골드 4
 
 ---
 
-#### 섹션 9. DFS, BFS 활용 - 16개 문제 (3시간 21분)
-- [ ] 9-1. 합이 같은 부분집합(DFS)
-- [ ] 9-2. 바둑이 승차(DFS)
-- [ ] 9-3. 최대점수 구하기(DFS)
-- [ ] 9-4. 중복순열 구하기
-- [ ] 9-5. 동전교환
-- [ ] 9-6. 순열 구하기
-- [ ] 9-7. 수열 추측하기
-- [ ] 9-8. 조합의 경우수
-- [ ] 9-9. 조합 구하기
-- [ ] 9-10. 미로탐색(DFS)
-- [ ] 9-11. 미로의 최단거리 통로(BFS)
-- [ ] 9-12. 토마토(BFS)
-- [ ] 9-13. 섬나라 아일랜드(DFS)
-- [ ] 9-14. 섬나라 아일랜드(BFS)
-- [ ] 9-15. 피자배달거리(DFS)
-- [ ] 9-16. 안전영역(DFS)
+## 6. 큐 / 덱 (Queue / Deque)
 
-**학습 목표**: 실전 문제에 DFS/BFS 적용하기
+### 1단계 — 실버 5 ~ 3
+- [x] [2161](https://www.acmicpc.net/problem/2161) 카드1 · 실버 5
+- [x] [11866](https://www.acmicpc.net/problem/11866) 요세푸스 문제 0 · 실버 5
+- [x] [10845](https://www.acmicpc.net/problem/10845) 큐 · 실버 4
+- [x] [1966](https://www.acmicpc.net/problem/1966) 프린터 큐 · 실버 3
 
-**조합/순열 DFS 패턴**:
-```java
-// 조합 (nCr)
-void DFS(int L, int s) {
-    if (L == r) {
-        // 조합 완성
-        return;
-    }
-    for (int i = s; i < n; i++) {
-        combi[L] = arr[i];
-        DFS(L + 1, i + 1);
-    }
-}
+### 2단계 — 실버 4 ~ 2
+- [ ] [10866](https://www.acmicpc.net/problem/10866) 덱 · 실버 4
+- [ ] [1021](https://www.acmicpc.net/problem/1021) 회전하는 큐 · 실버 4
+- [ ] [2346](https://www.acmicpc.net/problem/2346) 풍선 터뜨리기 · 실버 3
 
-// 순열 (nPr)
-void DFS(int L) {
-    if (L == r) {
-        // 순열 완성
-        return;
-    }
-    for (int i = 0; i < n; i++) {
-        if (!visited[i]) {
-            visited[i] = true;
-            pm[L] = arr[i];
-            DFS(L + 1);
-            visited[i] = false;
-        }
-    }
-}
-```
+### 3단계 — 골드 5
+- [ ] [5430](https://www.acmicpc.net/problem/5430) AC · 골드 5
 
 ---
 
-### Week 8: 고급 알고리즘
+## 7. 그리디 (Greedy)
 
-#### 섹션 10. Greedy Algorithm - 9개 문제 (2시간 52분)
-- [ ] 10-1. 씨름 선수
-- [ ] 10-2. 회의실 배정
-- [ ] 10-3. 결혼식
-- [ ] 10-4. 최대 수입 스케쥴
-- [ ] 10-5. 다익스트라 알고리즘
-- [ ] 10-6. 친구인가?(Union&Find)
-- [ ] 10-7. 원더랜드(크루스칼: Union&Find)
-- [ ] 10-8. 원더랜드(프림: PriorityQueue)
-- [ ] 10-9. 원더랜드(프림: ArrayList)
+### 1단계 — 실버 5 ~ 4
+- [x] [1094](https://www.acmicpc.net/problem/1094) 막대기 · 실버 5
+- [ ] [25757](https://www.acmicpc.net/problem/25757) 임스와 함께하는 미니게임 · 실버 5
+- [x] [2839](https://www.acmicpc.net/problem/2839) 설탕 배달 · 실버 4
+- [x] [1026](https://www.acmicpc.net/problem/1026) 보물 · 실버 4
 
-**학습 목표**: 그리디, 최단경로, MST 이해
+### 2단계 — 실버 3 ~ 2
+- [x] [11399](https://www.acmicpc.net/problem/11399) ATM · 실버 3
+- [ ] [2212](https://www.acmicpc.net/problem/2212) 센서 · 실버 3
+- [ ] [1541](https://www.acmicpc.net/problem/1541) 잃어버린 괄호 · 실버 2
 
-**PriorityQueue (우선순위 큐)**:
-```java
-// 최소힙 (기본)
-PriorityQueue<Integer> pq = new PriorityQueue<>();
+### 3단계 — 실버 1
+- [x] [11047](https://www.acmicpc.net/problem/11047) 동전 0 · 실버 1
+- [ ] [1931](https://www.acmicpc.net/problem/1931) 회의실 배정 · 실버 1
 
-// 최대힙
-PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-
-// 커스텀 정렬
-PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-```
+### 4단계 — 골드 5
+- [ ] [11000](https://www.acmicpc.net/problem/11000) 강의실 배정 · 골드 5
+- [ ] [1339](https://www.acmicpc.net/problem/1339) 단어 수학 · 골드 4
 
 ---
 
-#### 섹션 11. Dynamic Programming - 8개 문제 (1시간 18분)
-- [ ] 11-1. 계단오르기
-- [ ] 11-2. 돌다리 건너기
-- [ ] 11-3. 최대 부분 증가수열(LIS)
-- [ ] 11-4. 동전교환(냅색)
-- [ ] 11-5. 최대점수 구하기(냅색)
-- [ ] 11-6. 가장 높은 탑 쌓기(LIS 응용)
-- [ ] 11-7. 알리바바와 40인의 도적(Bottom-Up)
-- [ ] 11-8. 알리바바와 40인의 도적(Top-Down)
+## 8. 이진탐색 (Binary Search)
 
-**학습 목표**: DP의 핵심 패턴(메모이제이션, 점화식) 익히기
+### 1단계 — 개념 익히기
+> 이미 HashMap으로 푼 문제를 이진탐색으로 다시 풀어보기
+- [x] [1920](https://www.acmicpc.net/problem/1920) 수 찾기 (이진탐색 재풀이) · 실버 4
+- [x] [10816](https://www.acmicpc.net/problem/10816) 숫자 카드 2 (이진탐색 재풀이) · 실버 4
 
-**DP 기본 패턴**:
-```java
-// Bottom-Up
-int[] dp = new int[n + 1];
-dp[0] = 0;
-dp[1] = 1;
-for (int i = 2; i <= n; i++) {
-    dp[i] = dp[i-1] + dp[i-2];  // 점화식
-}
+### 2단계 — 실버 2 (매개변수 탐색)
+- [x] [1654](https://www.acmicpc.net/problem/1654) 랜선 자르기 · 실버 2
+- [x] [2805](https://www.acmicpc.net/problem/2805) 나무 자르기 · 실버 2
+- [x] [2512](https://www.acmicpc.net/problem/2512) 예산 · 실버 2
+- [ ] [2343](https://www.acmicpc.net/problem/2343) 기타 레슨 · 실버 2
 
-// Top-Down (메모이제이션)
-static int[] memo;
-int DFS(int n) {
-    if (memo[n] != 0) return memo[n];
-    if (n == 0) return 0;
-    if (n == 1) return 1;
-    return memo[n] = DFS(n-1) + DFS(n-2);
-}
-```
+### 3단계 — 실버 1
+- [x] [6236](https://www.acmicpc.net/problem/6236) 용돈 관리 · 실버 2
+
+### 4단계 — 골드 5
+- [ ] [3079](https://www.acmicpc.net/problem/3079) 입국 심사 · 골드 5
+- [ ] [2110](https://www.acmicpc.net/problem/2110) 공유기 설치 · 골드 4
 
 ---
 
-## 📊 진행률 추적
+## 9. 누적합 (Prefix Sum)
 
-### 전체 진행률
-- 섹션 1: ⬜⬜⬜ (0/3)
-- 섹션 2: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0/12)
-- 섹션 3: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0/12)
-- 섹션 4: ⬜⬜⬜⬜⬜⬜⬜ (0/7)
-- 섹션 5: ⬜⬜⬜⬜⬜ (0/5)
-- 섹션 6: ⬜⬜⬜⬜⬜⬜⬜⬜ (0/8)
-- 섹션 7: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0/10)
-- 섹션 8: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0/14)
-- 섹션 9: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0/16)
-- 섹션 10: ⬜⬜⬜⬜⬜⬜⬜⬜⬜ (0/9)
-- 섹션 11: ⬜⬜⬜⬜⬜⬜⬜⬜ (0/8)
+### 1단계 — 실버 3 (1D)
+- [x] [11659](https://www.acmicpc.net/problem/11659) 구간 합 구하기 4 · 실버 3
 
-**총 완료: 0/104 문제 (0%)**
+### 2단계 — 실버 1 (2D)
+- [ ] [11660](https://www.acmicpc.net/problem/11660) 구간 합 구하기 5 · 실버 1
+- [ ] [21318](https://www.acmicpc.net/problem/21318) 피아노 체조 · 실버 1
+
+### 3단계 — 골드 5
+- [ ] [10986](https://www.acmicpc.net/problem/10986) 나머지 합 · 골드 3
 
 ---
 
-## 💡 학습 팁
+## 10. Two Pointers / Sliding Window
 
-### 문제 풀이 루틴
-```
-1. 문제 읽기 (2분)
-2. 손코딩/슈도코드 작성 (5분)
-3. 구현 시도 (20분)
-4. 막히면 문법만 검색
-5. 그래도 안 되면 강의 힌트만 보기
-6. 구현 완료 후 다른 풀이 확인
-7. 다음날 반드시 복습!
-```
+### 1단계 — 실버 4 (기초)
+- [ ] [2003](https://www.acmicpc.net/problem/2003) 수들의 합 2 · 실버 4
+- [ ] [1940](https://www.acmicpc.net/problem/1940) 주몽 · 실버 4
+- [ ] [2559](https://www.acmicpc.net/problem/2559) 수열 · 실버 4
 
-### 중요 체크포인트
-- ✅ Week 3: Two Pointers 효율성 이해했는가?
-- ✅ Week 4: HashMap 활용이 자유로운가?
-- ✅ Week 6-7: DFS/BFS 구현을 외웠는가? (가장 중요!)
-- ✅ Week 8: DP 점화식을 스스로 세울 수 있는가?
+### 2단계 — 실버 3 ~ 2
+- [ ] [3273](https://www.acmicpc.net/problem/3273) 두 수의 합 · 실버 3
+- [ ] [2230](https://www.acmicpc.net/problem/2230) 수 고르기 · 실버 2
 
-### 막힐 때 대처법
-1. 5분 이상 아무 생각 안 나면 → 문제 다시 읽기
-2. 로직은 떠오르는데 구현 안 되면 → 문법만 검색
-3. 30분 이상 막히면 → 강의 일부만 보고 다시 시도
-4. 완전히 모르겠으면 → 강의 보고 이해 후 다음날 다시 풀기
-
-### 자주 쓰는 입출력
-```java
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        // 한 줄 입력
-        int n = sc.nextInt();
-        String str = sc.next();
-        String line = sc.nextLine();
-        
-        // 배열 입력
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-        
-        sc.close();
-    }
-}
-```
+### 3단계 — 골드 5
+- [ ] [2470](https://www.acmicpc.net/problem/2470) 두 용액 · 골드 5
+- [ ] [1253](https://www.acmicpc.net/problem/1253) 좋다 · 골드 4
 
 ---
 
-## 🎯 최종 목표
+## 11. DP (Dynamic Programming)
 
-- [ ] 104개 문제 모두 완료
-- [ ] String/Array 문제는 눈감고 풀 수 있는 수준
-- [ ] DFS/BFS 템플릿 암기
-- [ ] 코딩테스트 기본기 완성
+### 1단계 — 브론즈 ~ 실버 5
+- [x] [2775](https://www.acmicpc.net/problem/2775) 부녀회장이 될테야 · 브론즈 1
+
+### 2단계 — 실버 3 (기본 점화식)
+- [x] [1003](https://www.acmicpc.net/problem/1003) 피보나치 함수 · 실버 3
+- [x] [1463](https://www.acmicpc.net/problem/1463) 1로 만들기 · 실버 3
+- [x] [2579](https://www.acmicpc.net/problem/2579) 계단 오르기 · 실버 3
+- [x] [9095](https://www.acmicpc.net/problem/9095) 1, 2, 3 더하기 · 실버 3
+- [x] [11726](https://www.acmicpc.net/problem/11726) 2×n 타일링 · 실버 3
+- [x] [11727](https://www.acmicpc.net/problem/11727) 2×n 타일링 2 · 실버 3
+- [x] [9461](https://www.acmicpc.net/problem/9461) 파도반 수열 · 실버 3
+- [x] [17626](https://www.acmicpc.net/problem/17626) Four Squares · 실버 3
+
+### 3단계 — 실버 2 ~ 1
+- [ ] [11053](https://www.acmicpc.net/problem/11053) 가장 긴 증가하는 부분 수열 (LIS) · 실버 2
+- [ ] [1912](https://www.acmicpc.net/problem/1912) 연속합 · 실버 2
+- [ ] [1965](https://www.acmicpc.net/problem/1965) 상자넣기 · 실버 2
+- [ ] [1149](https://www.acmicpc.net/problem/1149) RGB거리 · 실버 1
+
+### 4단계 — 골드 5
+- [ ] [12865](https://www.acmicpc.net/problem/12865) 평범한 배낭 (냅색) · 골드 5
+- [ ] [2565](https://www.acmicpc.net/problem/2565) 전깃줄 (LIS 응용) · 골드 5
 
 ---
 
-## 📝 일일 학습 기록
+## 12. DFS (깊이우선탐색)
 
-### 2025년 10월
-- [ ] 10/03 (금):
-- [ ] 10/04 (토):
-- [ ] 10/05 (일):
-- [ ] 10/06 (월):
-- [ ] 10/07 (화):
+### 1단계 — 실버 3 ~ 2 (기초)
+- [x] [2606](https://www.acmicpc.net/problem/2606) 바이러스 · 실버 3
+- [x] [1012](https://www.acmicpc.net/problem/1012) 유기농 배추 · 실버 2
+- [x] [11724](https://www.acmicpc.net/problem/11724) 연결 요소의 개수 · 실버 2
+- [x] [1260](https://www.acmicpc.net/problem/1260) DFS와 BFS · 실버 2
 
-*(매일 완료한 문제 번호와 간단한 소감을 적어보세요)*
+### 2단계 — 실버 1
+- [x] [2667](https://www.acmicpc.net/problem/2667) 단지번호붙이기 · 실버 1
+- [x] [2468](https://www.acmicpc.net/problem/2468) 안전 영역 (DFS) · 실버 1
+- [x] [4963](https://www.acmicpc.net/problem/4963) 섬의 개수 · 실버 2
+
+### 3단계 — 골드 5
+- [ ] [16234](https://www.acmicpc.net/problem/16234) 인구 이동 · 골드 5
+- [ ] [14502](https://www.acmicpc.net/problem/14502) 연구소 · 골드 4
 
 ---
 
-**화이팅! 하루하루 체크하면서 성취감을 느껴보세요! 💪**
+## 13. BFS (너비우선탐색)
+
+### 1단계 — 실버 2 ~ 1 (기초)
+- [x] [1260](https://www.acmicpc.net/problem/1260) DFS와 BFS · 실버 2
+- [x] [2178](https://www.acmicpc.net/problem/2178) 미로 탐색 · 실버 1
+- [x] [2644](https://www.acmicpc.net/problem/2644) 촌수계산 · 실버 2
+
+### 2단계 — 실버 1 (응용)
+- [x] [1697](https://www.acmicpc.net/problem/1697) 숨바꼭질 · 실버 1
+- [x] [5014](https://www.acmicpc.net/problem/5014) 스타트링크 · 실버 1
+- [x] [7562](https://www.acmicpc.net/problem/7562) 나이트의 이동 · 실버 1
+- [x] [2468](https://www.acmicpc.net/problem/2468) 안전 영역 (BFS) · 실버 1
+
+### 3단계 — 골드 5
+- [ ] [7569](https://www.acmicpc.net/problem/7569) 토마토 · 골드 5
+- [ ] [16234](https://www.acmicpc.net/problem/16234) 인구 이동 · 골드 5
+- [ ] [2206](https://www.acmicpc.net/problem/2206) 벽 부수고 이동하기 · 골드 3
