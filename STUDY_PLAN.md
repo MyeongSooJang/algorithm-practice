@@ -70,8 +70,8 @@
 ### 3단계 — 실버 3 ~ 2
 - [ ] [2503](https://www.acmicpc.net/problem/2503) 숫자 야구 · 실버 3
 - [ ] [15649](https://www.acmicpc.net/problem/15649) N과 M (1) · 실버 3
-- [ ] [15650](https://www.acmicpc.net/problem/15650) N과 M (2) · 실버 3
-- [ ] [15651](https://www.acmicpc.net/problem/15651) N과 M (3) · 실버 3
+- [x] [15650](https://www.acmicpc.net/problem/15650) N과 M (2) · 실버 3
+- [x] [15651](https://www.acmicpc.net/problem/15651) N과 M (3) · 실버 3
 - [ ] [6064](https://www.acmicpc.net/problem/6064) 카잉 달력 · 실버 1
 
 ### 4단계 — 실버 1 ~ 골드 5
@@ -101,7 +101,7 @@
 
 ### 3단계 — 실버 3 ~ 1
 - [ ] [2002](https://www.acmicpc.net/problem/2002) 추월 · 실버 3
-- [ ] [5525](https://www.acmicpc.net/problem/5525) IOIOI · 실버 1
+- [x] [5525](https://www.acmicpc.net/problem/5525) IOIOI · 실버 1
 
 ---
 
@@ -124,8 +124,8 @@
 
 ### 3단계 — 실버 2 ~ 1 (우선순위 큐)
 - [ ] [11652](https://www.acmicpc.net/problem/11652) 카드 · 실버 2
-- [ ] [1927](https://www.acmicpc.net/problem/1927) 최소 힙 · 실버 2
-- [ ] [11286](https://www.acmicpc.net/problem/11286) 절댓값 힙 · 실버 1
+- [x] [1927](https://www.acmicpc.net/problem/1927) 최소 힙 · 실버 2
+- [x] [11286](https://www.acmicpc.net/problem/11286) 절댓값 힙 · 실버 1
 
 ### 4단계 — 골드 5
 - [ ] [1715](https://www.acmicpc.net/problem/1715) 카드 정렬하기 · 골드 4
@@ -206,7 +206,7 @@
 ### 2단계 — 실버 3 ~ 2
 - [x] [11399](https://www.acmicpc.net/problem/11399) ATM · 실버 3
 - [ ] [2212](https://www.acmicpc.net/problem/2212) 센서 · 실버 3
-- [ ] [1541](https://www.acmicpc.net/problem/1541) 잃어버린 괄호 · 실버 2
+- [x] [1541](https://www.acmicpc.net/problem/1541) 잃어버린 괄호 · 실버 2
 
 ### 3단계 — 실버 1
 - [x] [11047](https://www.acmicpc.net/problem/11047) 동전 0 · 실버 1
