@@ -69,10 +69,10 @@
 
 ### 3단계 — 실버 3 ~ 2
 - [ ] [2503](https://www.acmicpc.net/problem/2503) 숫자 야구 · 실버 3
-- [ ] [15649](https://www.acmicpc.net/problem/15649) N과 M (1) · 실버 3
+- [x] [15649](https://www.acmicpc.net/problem/15649) N과 M (1) · 실버 3
 - [x] [15650](https://www.acmicpc.net/problem/15650) N과 M (2) · 실버 3
 - [x] [15651](https://www.acmicpc.net/problem/15651) N과 M (3) · 실버 3
-- [ ] [6064](https://www.acmicpc.net/problem/6064) 카잉 달력 · 실버 1
+- [x] [6064](https://www.acmicpc.net/problem/6064) 카잉 달력 · 실버 1
 
 ### 4단계 — 실버 1 ~ 골드 5
 - [ ] [14888](https://www.acmicpc.net/problem/14888) 연산자 끼워넣기 · 실버 1
@@ -287,7 +287,7 @@
 - [x] [17626](https://www.acmicpc.net/problem/17626) Four Squares · 실버 3
 
 ### 3단계 — 실버 2 ~ 1
-- [ ] [11053](https://www.acmicpc.net/problem/11053) 가장 긴 증가하는 부분 수열 (LIS) · 실버 2
+- [x] [11053](https://www.acmicpc.net/problem/11053) 가장 긴 증가하는 부분 수열 (LIS) · 실버 2
 - [ ] [1912](https://www.acmicpc.net/problem/1912) 연속합 · 실버 2
 - [ ] [1965](https://www.acmicpc.net/problem/1965) 상자넣기 · 실버 2
 - [ ] [1149](https://www.acmicpc.net/problem/1149) RGB거리 · 실버 1
